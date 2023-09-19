@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Decrement API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <!--This is the Outer Most Wrapper Page of our site.-->
+    <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-10">
+        <!--Heading for Your API.-->
+        <div class="text-[#0398d4] font-medium text-[20px]">
+            Increment And Decrement
+        </div>
+
+        <!--This is the Outer div Which will have the three Smaller duv in it for Icons amd numeric value.-->
+        <div class="bg-white text-[25px] flex text-[#344151] rounded-sm gap-12 p-3 px-5">
+
+            <!--Increment Sign Icon.-->
+            <button onclick="increment()" class="border-r-2 border-[#bfbfbf] pr-5">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <!--Numeric Value representation.-->
+            <div id="contentValue" class="font-bold">
+                <!--Provided the id as contentValue to make it easier to fetch or extract
+                our value from the div to use it to increment and decrement.-->
+
+                <!--Here we have Passed the value 0 as your starting value and this value will only be fetched at starting before having an increment or decrement Operation.-->
+                0
+            </div>
+
+            <!--Decrement Sign Icon.-->
+            <button onclick="decrement()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/9cf2549b50.js" crossorigin="anonymous"></script>
+
+    <!--Java Script-->
+    <script src="index.js"></script>
+    
+</body>
+</html>
